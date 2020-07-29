@@ -43,6 +43,7 @@ const setProgressAndStatus = (progressVal, statusMsg) => {
 const addCoffee = $('#place-order');
 addCoffee.on('click', () => {
   incrementCoffeeSold($('#cart-items').children().length);
+  resetCart();
 })
 
 //
